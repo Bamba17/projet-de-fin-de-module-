@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="open();" onunload="close();">
+	<script type="text/javascript">
+		function open(){
+			fenetre = window.open();
+			fenetre.alert("cette fenetre se detruira dans 3s");
+		}
+
+		function close(){
+			setTimeout(function(){
+				window.close();}, 3000);
+		}
+	</script>
+
+</body>
+</html>

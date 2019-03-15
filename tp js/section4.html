@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Devoir</title>
+</head>
+<body>
+	<img src="images/image1.jpg" id="change" onmouseover="changeimg();" onmouseout="retourimg();">
+	<script type="text/javascript">
+		function changeimg(){
+			var x = document.getElementById("change");
+			x.src = "images/image2.jpg";
+		}
+
+		function retourimg(){
+			var x = document.getElementById("change");
+			x.src = "images/image1.jpg";
+		}
+	</script>
+</body>
+</html>

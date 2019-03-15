@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="calcul();">
+	<div id="cal"></div>
+	<script type="text/javascript">
+		var calc = document.getElementById("cal")
+		function calcul(){
+		var x = parseInt(prompt("entrer la 1ère note"));
+		var y = parseInt(prompt("entrer la 2e note"));
+		var z = parseInt(prompt("entrer la 3e note"));
+		var note = x+y+z;
+		
+		var moy = note/3;
+		alert(moy);
+		
+		if (moy>0 && moy<=5) 
+		{
+			calc.innerHTML = "mal";
+		}
+		else if (moy>5 && moy<10) 
+		{
+			calc.innerHTML += "mediocre";
+		}
+		else if (moy>9 && moy<15) {
+			calc.innerHTML += "assez bien";
+		}
+		else if (moy>14 && moy<21) {
+			calc.innerHTML="tres bien";
+		}
+		
+		}
+	</script>
+</body>
+</html>

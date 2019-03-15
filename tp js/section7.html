@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img src="images/image1.jpg" id="change" onmouseover="multiplication();">
+	<div id="img"></div>
+	<script type="text/javascript">
+		function multiplication(){
+			var x = prompt("entrer un nombre");
+			var i =1;
+			var y = document.getElementById("img");
+			while(i<5){
+				y.innerHTML += x  + "*" + i + "=" + x*i + "<br>";
+				i=i+1;
+			}
+		}
+	</script>
+</body>
+</html>

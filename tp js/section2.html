@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EXERCICE 1 javascript</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">section1</a></li>
+                <li><a href="section2.html">section2</a></li>
+                <li><a href="section3.html">section3</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <h1>les années bissextiles</h1>
+ 
+<button onClick="PromptMessage()" style="background: blue;padding: 30px">saisir</button>
+
+<script type="text/javascript">
+   function PromptMessage() {
+       var saisie = prompt("Saisissez une année")
+       console.log(saisie);
+
+
+
+if ((saisie % 4 === 0 && saisie % 100 > 0) || (saisie % 400 === 0)) {
+    alert(saisie + " est bissextile");
+} else {
+    alert(saisie + " n'est pas bissextile");
+}
+   }
+
+
+</script>
+
+</body>
+</html>
